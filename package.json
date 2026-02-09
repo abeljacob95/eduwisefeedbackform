@@ -1,0 +1,16 @@
+{
+  "name": "eduwise-feedback-system",
+  "version": "1.0.0",
+  "description": "Complete feedback collection and analytics system",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:all": "cd backend && npm run build && cd ../frontend && npm run build"
+  },
+  "keywords": ["eduwise", "feedback", "analytics"],
+  "author": "EduWise",
+  "license": "ISC"
+}
