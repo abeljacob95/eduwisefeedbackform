@@ -55,7 +55,7 @@ export default function FeedbackForm({ onSuccess }: FeedbackFormProps) {
     setError(null);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/feedback`, {
+      const response = await fetch('/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
